@@ -38,7 +38,11 @@ function renderLicenseSection(license) {
     let link = renderLicenseLink(license);
   
   if (link != "") {
-    return ""}
+    return ` ## License
+    This application is covered under the following licensing. For more information about the licensing, please visit this link. 
+    - [${license}](${link})`;
+  }
+    return "";
 }
 
 
