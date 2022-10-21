@@ -28,7 +28,7 @@ function renderLicenseLink(license) {
     case 'GNU General Public License v3.0':
     return `[GNU](https://www.gnu.org/licenses/gpl-3.0)`
   case 'No license':
-    return ``
+    return `""`
   }
 }
 
@@ -76,7 +76,7 @@ function generateMarkdown(data) {
   ${data.usage}
   
 
-  ## License
+
   
   ${renderLicenseSection(data.license)}
 
