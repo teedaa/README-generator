@@ -11,7 +11,7 @@ function renderLicenseBadge(license) {
     case 'GNU General Public License v3.0':
       return `[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)]`
     case 'No license':
-    return ``
+    return `""`
   }
 }
 
@@ -42,7 +42,7 @@ function renderLicenseSection(license) {
     This application is covered under the following licensing. For more information about the licensing, please visit this link. 
     - [${license}](${link})`;
   }
-    return "";
+    return `""`;
 }
 
 
@@ -54,7 +54,7 @@ function generateMarkdown(data) {
   ## Description
   ${data.desc}
 
-  ---
+  
 
   ## Table of Contents 
   -  [Installation](#installation)
@@ -65,30 +65,30 @@ function generateMarkdown(data) {
   - [Questions](#questions)
 
 
-  ---
+  
 
   ## Installation
   ${data.install}
 
-  ---
+  
 
   ## Usage
   ${data.usage}
-  ---
+  
 
   ## License
   
   ${renderLicenseSection(data.license)}
 
-  --- 
+  
 
   ## Contributing 
   ${data.contribution}
-  ---
+  
 
   ## Tests
   ${data.test}
-  ---
+  
 
   ## Questions 
 
